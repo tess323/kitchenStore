@@ -7,8 +7,9 @@
  * DELETE  /api/items/:id          ->  destroy
  */
 
+
 'use strict';
-// var csrf = require('csurf');
+
 
 import _ from 'lodash';
 var Item = require('./item.model');

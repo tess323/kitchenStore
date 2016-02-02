@@ -6,6 +6,51 @@
 'use strict';
 import Thing from '../api/thing/thing.model';
 import User from '../api/user/user.model';
+import Item from '../api/item/item.model'
+
+
+User.find({}).removeAsync()
+  .then(() => {
+    User.createAsync({
+      provider: 'local',
+      name: 'Test User',
+      email: 'test@example.com',
+      password: 'test'
+    }, {
+      provider: 'local',
+      role: 'admin',
+      name: 'Admin',
+      email: 'admin@example.com',
+      password: 'admin'
+    })
+    .then(() => {
+      console.log('finished populating users');
+    });
+  });
+
+Item.find({}).removeAsync()
+  .then(() => {
+    Item.create({
+      name: 'Outdoor Stove',
+      category: 'Outdoors',
+      copy:'To The Woods',
+      image: "https://source.unsplash.com/eqvj5r8nbH8/400x400",
+      price:60.99
+
+    }, {
+         name: 'Mason Jars Pack of 15',
+          category: 'Kitchen',
+          copy:'Farm Fresh',
+          image: 'https://source.unsplash.com/AlwIBbFJaX8/400x400',
+          price: 23
+    }, {
+        name: 'Milk Jug',
+        category: 'Outdoors',
+        copy:'To The Woods',
+        image: "https://source.unsplash.com/AlwIBbFJaX8/400x400",
+        price:60.99
+    });
+  });
 
 Thing.find({}).removeAsync()
   .then(() => {
@@ -39,21 +84,4 @@ Thing.find({}).removeAsync()
     });
   });
 
-User.find({}).removeAsync()
-  .then(() => {
-    User.createAsync({
-      provider: 'local',
-      name: 'Test User',
-      email: 'test@example.com',
-      password: 'test'
-    }, {
-      provider: 'local',
-      role: 'admin',
-      name: 'Admin',
-      email: 'admin@example.com',
-      password: 'admin'
-    })
-    .then(() => {
-      console.log('finished populating users');
-    });
-  });
+

@@ -1,11 +1,15 @@
 <navbar></navbar>
 <div class="container">
 <img class="picture" src="https://source.unsplash.com/AlwIBbFJaX8/400x400">
+<div class="well" ng-repeat="item in items track by $index">
+  {{item}}
+</div>
 
 <!-- <div class="quote">
 	<div class="left">{</div><p>Enjoy Summer<p><div class="uk-tab-right">}</div>
 	
 </div> -->
+
 <h1>{{items[0].name}}</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

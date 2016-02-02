@@ -5,7 +5,8 @@
     $routeProvider
       .when('/store', {
         templateUrl: 'app/store/store.html',
-        controller: 'StoreCtrl'
+        controller: 'StoreCtrl',
+        controllerAs: 'store'
       });
       
   });

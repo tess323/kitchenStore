@@ -14,20 +14,5 @@ router.delete('/:id', controller.destroy);
 
 
 
-router.route('/')
-  .get(function(req, res) {
-    Item.find(function(err, items) {
-      if (err) return res.status(500).send(err);
-      res.send(items);
-    });
-  })
-
-router.route('/:id')
-  .get(function(req, res) {
-    Item.findById(req.params.id, function(err, item) {
-      if (err) return res.status(500).send(err);
-      res.send(item);
-    });
-  })
 
 module.exports = router;
