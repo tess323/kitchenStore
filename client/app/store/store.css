@@ -1,0 +1,26 @@
+
+
+.g{
+	display: block;
+}
+	.g ul{
+		display: block;
+	}
+	.g li{
+		list-style: none;
+		display: block;
+		height: 350px;
+		
+	}
+	.g img{
+		border: solid;
+		border-color:#f8f8f8;
+		padding:3px;
+		
+	}
+	.g img:hover {
+	  background-color: #93A189;
+	  opacity: 0.4;
+	}
+
+

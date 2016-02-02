@@ -1,0 +1,55 @@
+/*.thing-form {
+  margin: 20px 0;
+}*/
+
+#banner {
+  border-bottom: none;
+  margin-top: -20px;
+
+}
+
+#banner h1 {
+  padding-top: 100px
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.hero-unit {
+  position: relative;
+  padding: 30px 15px;
+  color: #F5F5F5;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  background-image: url("https://source.unsplash.com/Bm-lpw4AUhE/1000x1500"); 
+  background:url("https://source.unsplash.com/Bm-lpw4AUhE/1000x1500") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:90em;
+}
+.jumbotron{
+  background:rgba(255,255,255, 0.2);
+  color: #ecf0f1;
+  margin-top: 200px;
+  border-radius: 0px;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 250%;
+
+
+}
+.btn{
+  background-color: #f8f8f8;
+  color: #5e5e5e;
+  border-color: #5e5e5e;
+  border-radius: 0px;
+
+}
+.btn:hover {
+  background-color: gray;
+  opacity: 0.4;
+}
+.navbar-text {
+  margin-left: 15px;
+}
