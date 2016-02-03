@@ -11,6 +11,8 @@ angular.module('storefrontApp', [
   'btford.socket-io',
   'ui.bootstrap',
   'validation.match',
+  'ItemServices',
+ 'storeControllers'
 
 
 

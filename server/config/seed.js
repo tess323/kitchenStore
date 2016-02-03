@@ -34,21 +34,24 @@ Item.find({}).removeAsync()
       name: 'Outdoor Stove',
       category: 'Outdoors',
       copy:'To The Woods',
-      image: "https://source.unsplash.com/eqvj5r8nbH8/400x400",
-      price:60.99
+      image: "https://source.unsplash.com/eqvj5r8nbH8/300x300",
+      price:60.99,
+      index: 1
 
     }, {
          name: 'Mason Jars Pack of 15',
           category: 'Kitchen',
           copy:'Farm Fresh',
-          image: 'https://source.unsplash.com/AlwIBbFJaX8/400x400',
-          price: 23
+          image: 'https://source.unsplash.com/AlwIBbFJaX8/300x300',
+          price: 23,
+          index: 2
     }, {
         name: 'Milk Jug',
         category: 'Outdoors',
         copy:'To The Woods',
-        image: "https://source.unsplash.com/AlwIBbFJaX8/400x400",
-        price:60.99
+        image: "https://source.unsplash.com/rNCnhO8XCeQ/300x300",
+        price:60.99,
+        index: 3
     });
   });
 

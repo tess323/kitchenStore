@@ -3,8 +3,8 @@
 angular.module('storefrontApp')
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/product', {
+      .when('/product/:id', {
         templateUrl: 'app/product/product.html',
-        controller: 'ProductCtrl'
+        controller: 'StoreShowCtrl'
       });
   });

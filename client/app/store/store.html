@@ -3,10 +3,10 @@
 <navbar></navbar>
 
   <div id="pattern" class="pattern">
-  	<ul class="g">
-			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#"><img src="https://source.unsplash.com/eqvj5r8nbH8/300x300" alt="Camp Stove" /></a></li>
+  	<ul class="g" ng-repeat="item in store.items">
+			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="product/{{item._id}}"><img ng-src={{item.image}} alt="Camp Stove" /></a></li>
 
-			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#"><img src="https://source.unsplash.com/AlwIBbFJaX8/300x300" alt="Product Name" /></a></li>
+			<!-- <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#"><img src="https://source.unsplash.com/AlwIBbFJaX8/300x300" alt="Product Name" /></a></li>
 
 			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#"><img src="https://source.unsplash.com/rNCnhO8XCeQ/300x300" alt="Product Name" /></a></li>
 
@@ -40,7 +40,7 @@
 			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#"><img src="https://source.unsplash.com/3J778yWKb2w/300x300" alt="Product Name" /></a></li>
 			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#"><img src="https://source.unsplash.com/eqvj5r8nbH8/300x300" alt="Product Name" /></a></li>
 			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#"><img src="https://source.unsplash.com/eqvj5r8nbH8/300x300" alt="Product Name" /></a></li>
-			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#"><img src="https://source.unsplash.com/eqvj5r8nbH8/300x300" alt="Product Name" /></a></li>
+			<li class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#"><img src="https://source.unsplash.com/eqvj5r8nbH8/300x300" alt="Product Name" /></a></li> -->
 		</ul>
         <div class="col-lg-12">
       <h1 class="page-header">Features:</h1>

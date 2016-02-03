@@ -1,37 +1,32 @@
 'use strict';
 
-(function() {
+/* Controllers */
 
-class StoreCtrl {
+var storeControllers = angular.module('storeControllers', []);
 
-  constructor($http, $scope, socket) {
-    this.$http = $http;
-    this.items = [];
-
+storeControllers.controller('StoreCtrl', ['$scope', '$http',
+  function($scope, $http) {
     $http.get('/api/items').then(response => {
       this.items = response.data;
-      socket.syncUpdates('items', this.items);
+      console.log($scope.items)
+     
     });
 
-    $scope.$on('$destroy', function() {
-      socket.unsyncUpdates('thing');
-    });
-  }
+    
+  }]);
 
-  addThing() {
-    if (this.newThing) {
-      this.$http.post('/api/things', { name: this.newThing });
-      this.newThing = '';
-    }
-  }
+storeControllers.controller('StoreShowCtrl', ['$scope', '$routeParams', '$http',
+  function($scope, $routeParams, $http) {
+   $http.get('api/items/'+$routeParams.id).then(response => {
+      $scope.items= response.data;
+      console.log($scope.items);
+     
+      });
 
-  deleteThing(thing) {
-    this.$http.delete('/api/things/' + thing._id);
-  }
-}
+   
+  }]);
 
-angular.module('storefrontApp')
-  .controller('StoreCtrl', StoreCtrl);
-  
+        
 
-})();
+ 
+

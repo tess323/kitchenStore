@@ -8,7 +8,8 @@ var ItemSchema = new mongoose.Schema({
   price: Number, 
   copy: String,
   image: String,
-  category: String
+  category: String,
+  index: Number
   
 });
 
